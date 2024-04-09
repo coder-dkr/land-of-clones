@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="/input.css">
+    <link rel="shortcut icon" href="/imgs/msfavicon.ico" type="image/x-icon">
     <title>Microsoft – Cloud, Computers, Apps & Gaming</title>
 </head>
 
-<body class="m-0 p-0">
-    <header class="shadow-[0_0.2px_0px_1px_#ECECEC] z-1 relative lg:shadow-none">
+<body class="m-0 p-0" id="bodi">
+    <header class="shadow-[0_0.2px_0px_1px_#ECECEC] z-1 relative lg:shadow-none" id="headofweb">
         <nav class="navbar flex justify-between items-center md:mx-10 lg:mx-24">
 
-            <div class="hamser flex items-center lg:hidden cursor-not-allowed">
+            <div class="hamser flex items-center lg:hidden cursor-context-menu" onclick="optcome()">
                 <div class="hamburger p-4 lg:hidden">
-                    <div class="line bg-black h-[2px] w-5 my-1"></div>
-                    <div class="line bg-black h-[2px] w-5 my-1"></div>
-                    <div class="line bg-black h-[2px] w-5 my-1"></div>
+                    <div class="line1 bg-black h-[2px] w-5 my-1"></div>
+                    <div class="line2 bg-black h-[2px] w-5 my-1"></div>
+                    <div class="line3 bg-black h-[2px] w-5 my-1"></div>
                 </div>
                 <div class="search lg:hidden"><img src="imgs/search.svg" alt=""
                         class="w-5 scale-x-[-1] cursor-not-allowed"></div>
@@ -25,27 +25,27 @@
 
 
             <div
-                class="MAINlogo flex h-14 items-center justify-center md:justify-center lg:justify-start lg:order-1 lg:space-x-9       ">
+                class="MAINlogo flex h-14 items-center justify-center md:justify-center lg:justify-start lg:order-1 lg:space-x-9  ">
 
-                <div class="miclog self-center ml-10 md:ml-12 lg:ml-0">
+                <div class="miclog self-center ml-10 md:ml-12 lg:ml-0 lg:w-[75px] xl:w-auto ">
                     <img src="imgs/microlog.png" alt="" class="micro items-center mb-1" width="110px" height="24px">
                 </div>
 
-                <div class="hidden lg:block compresso md:w-[59.333vw]">
+                <div class=" compresso sm:w-0 sm:mt-4 md:mt-0 lg:w-[59.333vw]">
 
                     <div class="maincon flex justify-between lg:w-[100%] items-center w-[100%] ">
                         <div
-                            class="features absolute inset-0 lg:static w-fit flex flex-col  lg:flex-row space-x-7 tracking-wide text-xs mt-36 lg:mt-0 -translate-x-[35rem] lg:translate-x-0">
-                            <div class="fitems hover:underline cursor-pointer">Microsoft 365</div>
-                            <div class="fitems hover:underline cursor-pointer">Teams</div>
-                            <div class="fitems hover:underline cursor-pointer">Copilot</div>
-                            <div class="fitems hover:underline cursor-pointer">Windows</div>
-                            <div class="fitems hover:underline cursor-pointer">Surface</div>
-                            <div class="fitems hover:underline cursor-pointer">Xbox</div>
-                            <div class="fitems ">Support</div>
+                            class="features anitrans hamclick absolute inset-0 flex flex-col md:static lg:flex-row lg:space-x-7 tracking-wide lg:mt-0 -translate-x-[50rem] lg:translate-x-0 lg:bg-white lg:text-xs lg:shadow-none lg:space-y-0 lg:font-normal md:w-fit">
+                            <div class="fitems hover:underline cursor-pointer active:text-gray-400">Microsoft 365</div>
+                            <div class="fitems hover:underline cursor-pointer active:text-gray-400">Teams</div>
+                            <div class="fitems hover:underline cursor-pointer active:text-gray-400">Copilot</div>
+                            <div class="fitems hover:underline cursor-pointer active:text-gray-400">Windows</div>
+                            <div class="fitems hover:underline cursor-pointer active:text-gray-400">Surface</div>
+                            <div class="fitems hover:underline cursor-pointer active:text-gray-400">Xbox</div>
+                            <div class="fitems hover:underline cursor-pointer active:text-gray-400">Support</div>
                         </div>
                         <div
-                            class="allmicrosofr tracking-wide text-xs hidden lg:block pr-5 hover:underline cursor-pointer">
+                            class="allmicrosofr mt-0.5 tracking-wide text-xs hidden lg:block pr-5 hover:underline cursor-pointer active:text-gray-400">
                             All Microsoft</div>
                     </div>
 
@@ -54,17 +54,20 @@
             </div>
 
             <div class=" ml-3 ENDNAV flex justify-center items-center space-x-5 md:space-x-4 h-14 px-1 lg:order-2">
-                <div class="search flex items-center justify-center md:space-x-3 md:text-xs cursor-not-allowed">
-                    <p class="hidden xl:block ">search</p>
-                    <img src="imgs/search.svg" alt="" class="hidden lg:block lg:w-6 scale-x-[-1]">
-                </div>
+                <a href="https://www.microsoft.com/en-in/search/explore?q=search&form=MSHOME?q=search&form=MSHOME"
+                    target="_blank">
+                    <div class="search flex items-center justify-center md:space-x-3 md:text-xs cursor-help">
+                        <p class="hidden xl:block hover:text-blue-700">search</p>
+                        <img src="imgs/search.svg" alt="" class="hidden lg:block lg:w-6 scale-x-[-1] ">
+                    </div>
+                </a>
                 <div class="cart flex items-center justify-center md:space-x-3 md:text-xs cursor-not-allowed">
-                    <p class="hidden xl:block ">cart</p>
-                    <img src="imgs/cart.svg" alt="" class="w-[25px] md:w-[30px] lg:w-7">
+                    <p class="hidden xl:block hover:text-gray-400">cart</p>
+                    <img src="imgs/cart.svg" alt="" class="w-[25px] md:w-[30px] lg:w-7 hover:opacity-30">
                 </div>
                 <div class="account flex items-center justify-center md:space-x-3 md:text-xs cursor-not-allowed">
-                    <p class="hidden xl:block ">sign in</p>
-                    <img src="imgs/usersign.svg" alt="" class="w-[25px] md:w-[35px] lg:w-6">
+                    <p class="hidden xl:block hover:text-gray-400">sign in</p>
+                    <img src="imgs/usersign.svg" alt="" class="w-[25px] md:w-[35px] lg:w-6 hover:opacity-30">
                 </div>
 
 
@@ -79,13 +82,14 @@
                 class="slider flex flex-col lg:flex-row lg:items-center lg:bg-[#f2f2f2] mx-1.5 my-0.5relative h-[510px] w-[100vw] ">
                 <div class="ad overflow-hidden">
                     <img src="/imgs/laptops.avif"
-                        class=" md:w-[100vw] lg:w-[780px] xl:w-[800px] xl:scaley-y-150 xl:scale-x-125  overflow-hidden">
+                        class=" md:w-[100vw] lg:w-[780px] xl:w-[800px] xl:scaley-y-150 xl:scale-x-125 overflow-hidden">
                 </div>
                 <div
-                    class="  py-5 px-6 txt space-y-4 h-56 shadow-[0_4px_4px_-2px_rgba(0,0,0,0.2)] sm:h-40 md:h-40 lg:shadow-none xl:pl-20 xl:p-0 xl:ml-10 xl:h-48 ">
+                    class=" py-5 px-6 txt space-y-4 h-56 shadow-[0_4px_4px_-2px_rgba(0,0,0,0.2)] sm:h-40 md:h-40 lg:shadow-none xl:pl-20 xl:p-0 xl:ml-10 xl:h-48 ">
                     <h1 class="text-2xl font-semibold lg:text-3xl xl:text-4xl ">Surface Pro 9</h1>
                     <p class="lg:w-[21rem]">Tablet versatility and laptop power — all in one ultra-portable device</p>
-                    <button class="bg-[#0067b8] p-2 w-46 text-white text-md font-semibold ">Learn More</button>
+                    <button class="bg-[#0067b8] p-2 w-46 text-white text-md font-semibold active:opacity-90 ">Learn
+                        More</button>
                 </div>
             </div>
 
@@ -96,7 +100,7 @@
 
                 <div class="ad overflow-hidden">
                     <img src="/imgs/phones.avif"
-                        class=" md:w-[100vw] lg:w-[780px] xl:w-[800px] xl:scaley-y-150 xl:scale-x-125  overflow-hidden">
+                        class=" md:w-[100vw] lg:w-[780px] xl:w-[800px] xl:scaley-y-150 xl:scale-x-125 overflow-hidden">
                 </div>
                 <div
                     class=" py-5 px-7 txt space-y-4 h-56 shadow-[0_4px_4px_-2px_rgba(0,0,0,0.2)] sm:h-40 md:h-44 lg:shadow-none xl:pl-20 xl:p-0 xl:ml-10 xl:h-48 ">
@@ -104,7 +108,8 @@
                         Copilot </h1>
                     <p class="lg:w-[22rem]">Get things done faster and unleash your creativity with the power of AI
                         anywhere you go. </p>
-                    <button class="bg-[#0067b8] p-2 w-46 text-white text-md font-semibold ">Download the Copilot
+                    <button class="bg-[#0067b8] p-2 w-46 text-white text-md font-semibold active:opacity-90 ">Download
+                        the Copilot
                         app</button>
                 </div>
 
@@ -115,74 +120,85 @@
 
 
     <div
-        class="useropts flex flex-wrap p-7 justify-center items-center mt-1 md:mt-4 lg:mt-12 md:space-x-3 xl:space-x-4">
+        class="useropts flex flex-wrap p-3 sm:p-6 justify-center items-center mt-1 md:mt-4 lg:mt-12 md:space-x-3 xl:space-x-4">
         <div class="opt-item flex flex-col justify-center items-center p-4 md:space-y-2 cursor-grab">
             <img src="imgs/optimg/m-365.svg" alt="" width="40px" height="40px">
-            <p class="text-[#086cba] font-semibold underline">Choose your Microsoft 365</p>
+            <p class="text-[#086cba] font-semibold underline active:text-blue-400">Choose your Microsoft 365</p>
         </div>
 
         <div class="opt-item flex flex-col justify-center items-center p-4 md:space-y-2 cursor-grab">
             <img src="imgs/optimg/xbox.svg" alt="" width="40px" height="40px">
-            <p class="text-[#086cba] font-semibold underline">Shop Xbox</p>
+            <p class="text-[#086cba] font-semibold underline active:text-blue-400">Shop Xbox</p>
         </div>
 
         <div class="opt-item flex flex-col justify-center items-center p-4 space-y-2 cursor-grab">
             <img src="imgs/optimg/m-365.svg" alt="" width="40px" height="40px">
-            <p class="text-[#086cba] font-semibold underline">Get Windows 11</p>
+            <p class="text-[#086cba] font-semibold underline active:text-blue-400">Get Windows 11</p>
         </div>
 
         <div class="opt-item flex flex-col justify-center items-center p-4 md:space-y-2 cursor-grab">
             <img src="imgs/optimg/surface.svg" alt="" width="40px" height="40px">
-            <p class="text-[#086cba] font-semibold underline">Explore Surface devices</p>
+            <p class="text-[#086cba] font-semibold underline active:text-blue-400">Explore Surface devices</p>
         </div>
 
     </div>
 
     <div class="card-bundle">
-        <div class="cards1 flex flex-col sm:flex-row  justify-center items-center px-3 space-y-12">
+        <div
+            class="cards1 flex flex-col sm:flex-row justify-center items-center sm:justify-around flex-wrap mx-4 md:mx-24 gap-y-12 gap-x-4 ">
 
 
-            <div class="card mx-3 card-shade  relative">
-                <img src="imgs/card-img/laptop5.webp" alt="" class="w-[100%] sm:w-[50%]">
-                <div class="ad-info pt-5 pr-5 pl-5 space-y-2">
-                    <h1 class="font-semibold text-xl">Surface Laptop 5</h1>
+            <div class="card card-shade relative max-w-72  shrink">
+                <img src="imgs/card-img/laptop5.webp" alt="" class="w-[100%] ">
+                <div class="ad-info pt-5 pr-5 pl-5 space-y-2 ">
+                    <h1 class="font-semibold text-2xl">Surface Laptop 5</h1>
                     <p>Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
                 </div>
                 <div class="ad-btn px-5 pt-3 pb-5">
-                    <button class="bg-[#0067b8] p-2 w-46 text-white text-md font-semibold">Learn more</button>
+                    <button
+                        class="bg-[#0067b8] p-2 mt-16 w-46 text-white text-md font-semibold active:bg-blue-400">Learn
+                        more</button>
                 </div>
             </div>
 
-            <div class="card mx-3 card-shade  relative">
-                <img src="imgs/card-img/laptop5.webp" alt="" class="w-[100%] sm:w-[50%]">
+            <div class="card card-shade relative max-w-72 shrink">
+                <img src="imgs/card-img/surfacelap.webp" alt="" class="w-[100%] ">
                 <div class="ad-info pt-5 pr-5 pl-5 space-y-2">
-                    <h1 class="font-semibold text-xl">Surface Laptop 5</h1>
+                    <h1 class="font-semibold text-2xl">Surface Laptop 5</h1>
                     <p>Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
                 </div>
                 <div class="ad-btn px-5 pt-3 pb-5">
-                    <button class="bg-[#0067b8] p-2 w-46 text-white text-md font-semibold">Learn more</button>
+                    <button
+                        class="bg-[#0067b8] p-2 mt-16 w-46 text-white text-md font-semibold active:bg-blue-400">Learn
+                        more</button>
                 </div>
             </div>
 
-            <div class="card mx-3 card-shade  relative">
-                <img src="imgs/card-img/laptop5.webp" alt="" class="w-[100%] sm:w-[50%]">
+            <div class="card card-shade relative max-w-72  shrink">
+                <img src="imgs/card-img/xboxX.webp" alt="" class="w-[100%] ">
                 <div class="ad-info pt-5 pr-5 pl-5 space-y-2">
-                    <h1 class="font-semibold text-xl">Surface Laptop 5</h1>
-                    <p>Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
+                    <h1 class="font-semibold text-2xl">Xbox Series X </h1>
+                    <p>The fastest, most powerful Xbox ever.</p>
                 </div>
                 <div class="ad-btn px-5 pt-3 pb-5">
-                    <button class="bg-[#0067b8] p-2 w-46 text-white text-md font-semibold">Learn more</button>
+                    <button class="bg-[#0067b8] p-2 mt-28 w-46 text-white text-md font-semibold active:bg-blue-400">Shop
+                        Xbox Series X </button>
                 </div>
             </div>
 
-            <div class="card mx-3 card-shade  relative">
-                <img src="imgs/card-img/laptop5.webp" alt="" class="w-[100%] sm:w-[50%]">
+            <div class="card card-shade relative max-w-72  shrink">
+                <img src="imgs/card-img/MAX365.avif" alt="" class="w-[100%] ">
                 <div class="ad-info pt-5 pr-5 pl-5 space-y-2">
-                    <h1 class="font-semibold text-xl">Surface Laptop 5</h1>
-                    <p>Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
+                    <h1 class="font-semibold text-xl">Maximise the everyday with Microsoft 365 </h1>
+                    <p>Get online protection, secure cloud storage and innovative apps designed to fit your needs – all
+                        in one plan. </p>
                 </div>
                 <div class="ad-btn px-5 pt-3 pb-5">
-                    <button class="bg-[#0067b8] p-2 w-46 text-white text-md font-semibold">Learn more</button>
+                    <button class="bg-[#0067b8] p-2 mt-1 w-46 text-white text-md font-semibold active:bg-blue-400">Learn
+                        more</button>
+                    <p
+                        class="text-blue-700 pt-2.5 tracking-wider font-semibold hover:underline cursor-pointer active:text-blue-500">
+                        For up to six people ></p>
                 </div>
             </div>
 
@@ -196,10 +212,251 @@
         </div>
     </div>
 
+    <a href="https://www.xbox.com/en-in/consoles/xbox-series-s?icid=mscom_marcom_MPH1a_XboxSeriesS" target="_blank">
+        <div class="centre-ad flex justify-center items-center my-12 mx-2">
+            <div
+                class="slider flex flex-col lg:flex-row-reverse lg:items-center lg:bg-[#e7e7e7] my-0.5 relative h-[32rem] w-[90vw] ">
+                <div class="ad overflow-hidden">
+                    <img src="/imgs/card-img/xbob-play.png"
+                        class=" md:w-[100vw] lg:w-[780px] xl:w-[45rem] xl:scaley-y-150 xl:scale-x-125 ">
+                </div>
+                <div
+                    class=" sm:relative pl-20 lg:left-0  py-5 px-6 txt space-y-4 h-56 shadow-[0_4px_4px_-2px_rgba(0,0,0,0.2)] sm:h-40 md:h-40 lg:shadow-none xl:pr-12 xl:ml-20 xl:h-52 ">
+                    <h1 class="text-3xl font-semibold lg:text-3xl xl:text-5xl ">Xbox Series S </h1>
+                    <p class="lg:w-[21rem]">Next-gen performance in the smallest Xbox ever </p>
+                    <div>
+                        <button
+                            class="bg-[#0067b8] p-2 w-46 text-white text-md font-semibold active:opacity-80 hover:shadow-md ">Shop
+                            Xbox
+                            Series S</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+
+    <div class="card-bundle-2 lg:my-28">
+        <div class="card-head text-xl mx-12 md:mx-20 sm:text-2xl md:text-3xl lg:text-4xl font-semibold">
+            <h1>For business</h1>
+        </div>
+
+        <div
+            class="cards2 flex flex-col sm:flex-row justify-center items-center sm:justify-around flex-wrap my-4 mx-4 md:mx-16 gap-y-12 gap-x-6  ">
 
 
 
+            <div class="card card-shade relative max-w-[20rem] shrink">
+                <img src="imgs/card-img/win-22.avif" alt="" class="w-[100%] ">
+                <div class="ad-info pt-5 pr-5 pl-5 space-y-2 ">
+                    <h1 class="font-semibold text-2xl">Surface for Business</h1>
+                    <p>No matter what you do, there’s a Surface to help you do it.</p>
+                </div>
+                <div class="ad-btn px-5 pt-3 pb-5">
+                    <button class="bg-[#0067b8] p-2 mt-16 w-46 text-white text-md font-semibold active:bg-blue-400">Shop
+                        now</button>
+                </div>
+            </div>
 
+            <div class="card card-shade relative max-w-[19rem] shrink">
+                <img src="imgs/card-img/get-ms.webp" alt="" class="w-[100%] ">
+                <div class="ad-info pt-5 pr-5 pl-5 space-y-2">
+                    <h1 class="font-semibold text-2xl">Get Microsoft Teams for free </h1>
+                    <p>Online meetings, chat and shared cloud storage – all in one place.</p>
+                </div>
+                <div class="ad-btn px-5 pt-3 pb-5">
+                    <button class="bg-[#0067b8] p-2 mt-11 w-46 text-white text-md font-semibold active:bg-blue-400">Sign
+                        up for free</button>
+                </div>
+            </div>
+
+            <div class="card card-shade relative max-w-[19rem] shrink">
+                <img src="imgs/card-img/win-11.jpeg" alt="" class="w-[100%] ">
+                <div class="ad-info pt-5 pr-5 pl-5 space-y-2">
+                    <h1 class="font-semibold text-2xl">Windows 11 for business</h1>
+                    <p>Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.</p>
+                </div>
+                <div class="ad-btn px-5 pt-3 pb-5">
+                    <button
+                        class="bg-[#0067b8] p-2 mt-14 w-46 text-white text-md font-semibold active:bg-blue-400">Learn
+                        more</button>
+                </div>
+            </div>
+
+            <div class="card card-shade relative max-w-[19rem] shrink">
+                <img src="imgs/card-img/ai-img.jpeg" alt="" class="w-[100%] ">
+                <div class="ad-info pt-5 pr-5 pl-5 space-y-2">
+                    <h1 class="font-semibold text-2xl">Join the era of AI </h1>
+                    <p>Create, communicate, and code with the latest Microsoft AI solutions.</p>
+                </div>
+                <div class="ad-btn px-5 pt-3 pb-5">
+                    <button
+                        class="bg-[#0067b8] p-2 mt-20 w-46 text-white text-md font-semibold active:bg-blue-400">Explore
+                        AI solutions</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="follow-ms flex space-x-6 justify-start items-center md:mx-24 m-10">
+        <p class="text-base md:text-lg">Follow Microsoft </p>
+        <div class="ms-icons flex space-x-5">
+            <img src="imgs/optimg/facebook-f.svg" alt="" class="w-8 h-5">
+            <img src="imgs/optimg/x-twitter.svg" alt="" class="w-8 h-5">
+            <img src="imgs/optimg/youtube.svg" alt="" class="w-8 h-6">
+            <span class="bg-black h-7 w-[2px]"></span>
+            <button onclick="goDark()"><img src="imgs/cloud-moon-solid.svg" alt="" class="w-8 h-6" id="heaven-moon"></button>
+        </div>
+    </div>
+
+    <button id="myBtnn"
+        class="text-lg z-50 p-3 px-5 font-semibold bg-gray-200 rounded-xl card-shade hover:bg-white md:fixed bottom-[34rem] right-8 mx-auto md:mx-0"
+        onclick="backTop()">Back to Top</button>
+
+
+    <footer>
+        <div class="ms-end bg-[#f2f2f2] mt-[8rem] text-[#616161]">
+            <div class="end-lists py-10 px-6 space-y-12 flex flex-col lg:flex-row lg:space-y-0">
+
+
+                <div class="list11 space-y-12 flex flex-col sm:flex-row sm:space-y-0">
+                    <div class="list space-y-2 sm:w-1/3 sm:sm:mx-16">
+                        <span>
+                            <h1 class="font-semibold text-[#616161]">What's new</h1>
+                        </span>
+                        <ul class="text-[0.7rem] space-y-4">
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Games</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Surface Pro 9</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Surface Laptop 5</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Surface Laptop Go 2</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft Copilot</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft 365</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Windows 11 apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="list space-y-2 sm:w-1/3 sm:sm:mx-16">
+                        <span>
+                            <h1 class="font-semibold text-[#616161]">Microsoft Store</h1>
+                        </span>
+                        <ul class="text-[0.7rem] space-y-4">
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Account profile</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Download Center</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft Store Support</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Returns</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Order tracking</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="list space-y-2 sm:w-1/3 sm:sm:mx-16">
+                        <span>
+                            <h1 class="font-semibold text-[#616161]">Education</h1>
+                        </span>
+                        <ul class="text-[0.7rem] space-y-4">
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft in education</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Devices for education</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft Teams for
+                                Education</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft 365 Education</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Office Education</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Educator training and
+                                development</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Deals for students and
+                                parents</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Azure for students</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="list22 space-y-12 flex flex-col sm:flex-row sm:space-y-0">
+
+                    <div class="list space-y-2 sm:w-1/3 sm:mx-16">
+                        <span>
+                            <h1 class="font-semibold text-[#616161]">Buisness</h1>
+                        </span>
+                        <ul class="text-[0.7rem] space-y-4">
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft Cloud</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft Security</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Azure</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Dynamics 365</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft 365</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft Advertising</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Copilot for Microsoft 365
+                            </li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft Teams</li>
+                        </ul>
+                    </div>
+
+                    <div class="list space-y-2 sm:w-1/3 sm:mx-16">
+                        <span>
+                            <h1 class="font-semibold text-[#616161]">Developer & IT</h1>
+                        </span>
+                        <ul class="text-[0.7rem] space-y-4">
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Developer Center</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Documentation</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft Learn</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft Tech Community
+                            </li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Azure Marketplace</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">AppSource</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Microsoft Power Platform
+                            </li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Visual Studio</li>
+                        </ul>
+                    </div>
+
+                    <div class="list space-y-2 sm:w-1/3 sm:mx-16">
+                        <span>
+                            <h1 class="font-semibold text-[#616161]">Company</h1>
+                        </span>
+                        <ul class="text-[0.7rem] space-y-4">
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Careers</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">About Microsoft</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Company news</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Privacy at Microsoft</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Investors</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Security</li>
+                            <li class="hover:underline cursor-pointer active:text-gray-400">Sustainability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-end py-8 px-6 text-[11px] space-y-4 sm:mx-16 flex flex-col lg:space-y-0 lg:flex-row lg:items-center lg:space-x-8">
+                <div class="flex gap-x-2 items-center hover:border-2 hover:opacity-70 cursor-not-allowed">
+                    <img src="/imgs/earth.svg" alt="" class="w-6 h-5">
+                    <p>English(India)</p>
+                </div>
+                <div class="flex  items-center lg:w-[14%] cursor-not-allowed  hover:opacity-70">
+                    <img src="/imgs/check-solid.svg" alt="" class="w-6 h-5">
+                    <p>Your Privacy Choices</p>
+                </div>
+                <div class="lastest-2 space-y-4 flex flex-col sm:flex-row md:justify-between lg:space-y-0 lg:items-center w-[100%] lg:ml-0">
+                    <p class="cursor-not-allowed  hover:opacity-70">Consumer Health Privacy</p>
+
+                    <div>
+                        <ul class="flex flex-wrap  items-start">
+                            <li class="mr-3 my-1 hover:underline cursor-pointer active:text-gray-400">Contact Microsoft
+                            </li>
+                            <li class="mr-3 my-1 hover:underline cursor-pointer active:text-gray-400">Privacy </li>
+                            <li class="mr-3 my-1 hover:underline cursor-pointer active:text-gray-400">Terms of use </li>
+                            <li class="mr-3 my-1 hover:underline cursor-pointer active:text-gray-400">Trademarks </li>
+                            <li class="mr-3 my-1 hover:underline cursor-pointer active:text-gray-400">About our ads
+                            </li>
+                            <li class="mr-3 my-1 hover:underline cursor-pointer active:text-gray-400">© Microsoft 2024
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="/input.js"></script>
 </body>
 
 </html>
