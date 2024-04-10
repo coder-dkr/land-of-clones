@@ -19,7 +19,7 @@ function whenScroll() {
     toptton.style.display = "none";
   }
 }
-function backTop() {
+toptton.onclick = function backTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
