@@ -1,4 +1,5 @@
-function optcome() {
+let hamse = document.getElementById('hamsera')
+hamse.onclick = function optcome() {
   document.getElementsByClassName('features')[0].classList.toggle('absolute');
   document.getElementsByClassName('features')[0].classList.toggle('hamclcick');
   document.getElementsByClassName('features')[0].classList.toggle('-translate-x-[50rem]');
@@ -24,15 +25,15 @@ function backTop() {
 }
 
 
-
-function goDark() {
+let puffy = document.getElementById('heaven-moon')
+puffy.onclick = function goDark() {
   document.getElementById('bodi').classList.toggle("bg-[#111827]");
   document.getElementById('bodi').classList.toggle("text-yellow-500");
   document.getElementById('featr').style.background = "#1f2937";
   document.getElementById('follow-ms').style.background = "white";
   document.getElementById('follow-ms').style.color = "black";
   document.getElementById('headofweb').style.background = "#1f2937"; 
-
+  
   const nodeList = document.querySelectorAll(".card");
   nodeList.forEach((node)=>{
     node.style.background ="#1f2937";
@@ -40,11 +41,12 @@ function goDark() {
   
   document.getElementById('heaven-moon').style.display ="none";
   document.getElementById('heaven-sun').style.display ="block";
-
+  console.log("done dana done")
 }
 
 
-function goBright() {
+let puffydog  = document.getElementById('heaven-sun')
+puffydog.onclick = function goBright() {
   document.getElementById('bodi').classList.toggle("bg-[#111827]");
   document.getElementById('bodi').classList.toggle("text-yellow-500");
   document.getElementById('featr').style.background = "white";

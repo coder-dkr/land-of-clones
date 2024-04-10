@@ -16,7 +16,7 @@
 
         <nav class="navbar flex justify-between items-center md:mx-10 lg:mx-24">
 
-            <div class="hamser flex items-center lg:hidden cursor-context-menu" onclick="optcome()">
+            <div class="hamser flex items-center lg:hidden cursor-context-menu" id="hamsera">
                 <div class="hamburger p-4 lg:hidden">
                     <div class="line1 bg-black h-[2px] w-5 my-1"></div>
                     <div class="line2 bg-black h-[2px] w-5 my-1"></div>
@@ -70,9 +70,9 @@
                     <p class="hidden xl:block hover:text-gray-400 w-10">sign in</p>
                     <img src="imgs/usersign.svg" alt="" class="w-[25px] md:w-[35px] lg:w-6 hover:opacity-30">
                 </div>
-                <button onclick="goDark()" id="heaven-moon"><img src="imgs/cloud-moon-solid.svg" alt=""
+                <button id="heaven-moon"><img src="imgs/cloud-moon-solid.svg" alt=""
                         class="w-8 h-6"></button>
-                <button onclick="goBright()" class="hidden" id="heaven-sun"><img src="imgs/sun-solid.svg" alt=""
+                <button class="hidden" id="heaven-sun"><img src="imgs/sun-solid.svg" alt=""
                         class="w-9 h-7" id="heaven-moon"></button>
 
 
@@ -476,7 +476,7 @@
         </div>
     </footer>
 
-    <script src="/input.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 
 </html>
