@@ -11,6 +11,9 @@
 
 <body class="m-0 p-0" id="bodi">
     <header class="shadow-[0_0.2px_0px_1px_#ECECEC] z-1 relative lg:shadow-none" id="headofweb">
+
+        <!-- NAVBAR -->
+
         <nav class="navbar flex justify-between items-center md:mx-10 lg:mx-24">
 
             <div class="hamser flex items-center lg:hidden cursor-context-menu" onclick="optcome()">
@@ -22,8 +25,6 @@
                 <div class="search lg:hidden"><img src="imgs/search.svg" alt=""
                         class="w-5 scale-x-[-1] cursor-not-allowed"></div>
             </div>
-
-
             <div
                 class="MAINlogo flex h-14 items-center justify-center md:justify-center lg:justify-start lg:order-1 lg:space-x-9  ">
 
@@ -76,6 +77,8 @@
         </nav>
     </header>
 
+    <!-- SLIDER HERO SECTION -->
+
     <div class="slides flex space-x-4 overflow-scroll ">
         <div class="slide1">
             <div
@@ -118,6 +121,7 @@
         </div>
     </div>
 
+    <!-- USER OPTIONS SECTION  -->
 
     <div
         class="useropts flex flex-wrap p-3 sm:p-6 justify-center items-center mt-1 md:mt-4 lg:mt-12 md:space-x-3 xl:space-x-4">
@@ -142,6 +146,9 @@
         </div>
 
     </div>
+
+
+    <!-- CARD BUNDLE FIRST    -->
 
     <div class="card-bundle">
         <div
@@ -201,19 +208,15 @@
                         For up to six people ></p>
                 </div>
             </div>
-
-
-
-
-
-
-
-
         </div>
     </div>
 
+
+    <!-- CENTRE AD- XBOX SECTION -->
+
     <a href="https://www.xbox.com/en-in/consoles/xbox-series-s?icid=mscom_marcom_MPH1a_XboxSeriesS" target="_blank">
-        <div class="centre-ad flex justify-center items-center my-12 mx-2">
+        <div
+            class="centre-ad flex justify-center items-center my-12 mx-2">
             <div
                 class="slider flex flex-col lg:flex-row-reverse lg:items-center lg:bg-[#e7e7e7] my-0.5 relative h-[32rem] w-[90vw] ">
                 <div class="ad overflow-hidden">
@@ -234,6 +237,8 @@
             </div>
         </div>
     </a>
+
+    <!-- CARD BUNDLE SECOND -->
 
 
     <div class="card-bundle-2 lg:my-28">
@@ -298,6 +303,8 @@
         </div>
     </div>
 
+    <!-- FOLLOW AND DARK MODE SECTION -->
+
     <div class="follow-ms flex space-x-6 justify-start items-center md:mx-24 m-10">
         <p class="text-base md:text-lg">Follow Microsoft </p>
         <div class="ms-icons flex space-x-5">
@@ -305,14 +312,19 @@
             <img src="imgs/optimg/x-twitter.svg" alt="" class="w-8 h-5">
             <img src="imgs/optimg/youtube.svg" alt="" class="w-8 h-6">
             <span class="bg-black h-7 w-[2px]"></span>
-            <button onclick="goDark()"><img src="imgs/cloud-moon-solid.svg" alt="" class="w-8 h-6" id="heaven-moon"></button>
+            <button onclick="goDark()" id="heaven-moon"><img src="imgs/cloud-moon-solid.svg" alt="" class="w-8 h-6"></button>
+            <button onclick="goBright()" class="hidden" id="heaven-sun"><img src="imgs/sun-solid.svg" alt="" class="w-9 h-7"
+                    id="heaven-moon"></button>
         </div>
     </div>
+
+    <!-- BACK TO TOP BUTTON -->
 
     <button id="myBtnn"
         class="text-lg z-50 p-3 px-5 font-semibold bg-gray-200 rounded-xl card-shade hover:bg-white md:fixed bottom-[34rem] right-8 mx-auto md:mx-0"
         onclick="backTop()">Back to Top</button>
 
+    <!-- FOOTER SECTION -->
 
     <footer>
         <div class="ms-end bg-[#f2f2f2] mt-[8rem] text-[#616161]">
@@ -425,8 +437,9 @@
                 </div>
             </div>
 
-            <div class="footer-end py-8 px-6 text-[11px] space-y-4 sm:mx-16 flex flex-col lg:space-y-0 lg:flex-row lg:items-center lg:space-x-8">
-                <div class="flex gap-x-2 items-center hover:border-2 hover:opacity-70 cursor-not-allowed">
+            <div
+                class="footer-end py-8 px-6 text-[11px] space-y-4 sm:mx-16 flex flex-col lg:space-y-0 lg:flex-row lg:items-center lg:space-x-8">
+                <div class="flex gap-x-2 items-center hover:opacity-70 cursor-not-allowed">
                     <img src="/imgs/earth.svg" alt="" class="w-6 h-5">
                     <p>English(India)</p>
                 </div>
@@ -434,7 +447,8 @@
                     <img src="/imgs/check-solid.svg" alt="" class="w-6 h-5">
                     <p>Your Privacy Choices</p>
                 </div>
-                <div class="lastest-2 space-y-4 flex flex-col sm:flex-row md:justify-between lg:space-y-0 lg:items-center w-[100%] lg:ml-0">
+                <div
+                    class="lastest-2 space-y-4 flex flex-col sm:flex-row md:justify-between lg:space-y-0 lg:items-center w-[100%] lg:ml-0">
                     <p class="cursor-not-allowed  hover:opacity-70">Consumer Health Privacy</p>
 
                     <div>

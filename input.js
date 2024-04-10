@@ -26,11 +26,24 @@ function backTop() {
 
 
 function goDark() {
-  document.getElementById('bodi').classList.toggle("bg-[#4C4646]");
+  document.getElementById('bodi').classList.toggle("bg-[#1A2421]");
   document.getElementById('bodi').classList.toggle("text-yellow-500");
-  document.getElementById('heaven-moon').style.color ="white";
+  
+  document.getElementById('heaven-moon').style.display ="none";
+  document.getElementById('heaven-sun').style.display ="block";
 
 }
+
+
+function goBright() {
+  document.getElementById('bodi').classList.toggle("bg-[#1A2421]");
+  document.getElementById('bodi').classList.toggle("text-yellow-500");
+  
+  document.getElementById('heaven-moon').style.display ="block";
+  document.getElementById('heaven-sun').style.display ="none";
+
+}
+
 
 // var liz = document.getElementsByTagName('li');
 // liz.onmouseover = function(){
