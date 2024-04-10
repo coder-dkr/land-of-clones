@@ -26,8 +26,17 @@ function backTop() {
 
 
 function goDark() {
-  document.getElementById('bodi').classList.toggle("bg-[#1A2421]");
+  document.getElementById('bodi').classList.toggle("bg-[#111827]");
   document.getElementById('bodi').classList.toggle("text-yellow-500");
+  document.getElementById('featr').style.background = "#1f2937";
+  document.getElementById('follow-ms').style.background = "white";
+  document.getElementById('follow-ms').style.color = "black";
+  document.getElementById('headofweb').style.background = "#1f2937"; 
+
+  const nodeList = document.querySelectorAll(".card");
+  nodeList.forEach((node)=>{
+    node.style.background ="#1f2937";
+  })
   
   document.getElementById('heaven-moon').style.display ="none";
   document.getElementById('heaven-sun').style.display ="block";
@@ -36,8 +45,16 @@ function goDark() {
 
 
 function goBright() {
-  document.getElementById('bodi').classList.toggle("bg-[#1A2421]");
+  document.getElementById('bodi').classList.toggle("bg-[#111827]");
   document.getElementById('bodi').classList.toggle("text-yellow-500");
+  document.getElementById('featr').style.background = "white";
+  // document.getElementById('follow-ms').style.background = "white";
+  document.getElementById('headofweb').style.background = "white"; 
+  const nodeList2 = document.querySelectorAll(".card");
+  nodeList2.forEach((node)=>{
+    node.style.background ="white";
+  })
+  
   
   document.getElementById('heaven-moon').style.display ="block";
   document.getElementById('heaven-sun').style.display ="none";

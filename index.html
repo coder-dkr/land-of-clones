@@ -35,8 +35,8 @@
                 <div class=" compresso sm:w-0 sm:mt-4 md:mt-0 lg:w-[59.333vw]">
 
                     <div class="maincon flex justify-between lg:w-[100%] items-center w-[100%] ">
-                        <div
-                            class="features anitrans hamclick absolute inset-0 flex flex-col md:static lg:flex-row lg:space-x-7 tracking-wide lg:mt-0 -translate-x-[50rem] lg:translate-x-0 lg:bg-white lg:text-xs lg:shadow-none lg:space-y-0 lg:font-normal md:w-fit">
+                        <div class="features anitrans hamclick absolute inset-0 flex flex-col md:static lg:flex-row lg:space-x-7 tracking-wide lg:mt-0 -translate-x-[50rem] lg:translate-x-0 lg:bg-white lg:text-xs lg:shadow-none lg:space-y-0 lg:font-normal md:w-fit"
+                            id="featr">
                             <div class="fitems hover:underline cursor-pointer active:text-gray-400">Microsoft 365</div>
                             <div class="fitems hover:underline cursor-pointer active:text-gray-400">Teams</div>
                             <div class="fitems hover:underline cursor-pointer active:text-gray-400">Copilot</div>
@@ -67,9 +67,13 @@
                     <img src="imgs/cart.svg" alt="" class="w-[25px] md:w-[30px] lg:w-7 hover:opacity-30">
                 </div>
                 <div class="account flex items-center justify-center md:space-x-3 md:text-xs cursor-not-allowed">
-                    <p class="hidden xl:block hover:text-gray-400">sign in</p>
+                    <p class="hidden xl:block hover:text-gray-400 w-10">sign in</p>
                     <img src="imgs/usersign.svg" alt="" class="w-[25px] md:w-[35px] lg:w-6 hover:opacity-30">
                 </div>
+                <button onclick="goDark()" id="heaven-moon"><img src="imgs/cloud-moon-solid.svg" alt=""
+                        class="w-8 h-6"></button>
+                <button onclick="goBright()" class="hidden" id="heaven-sun"><img src="imgs/sun-solid.svg" alt=""
+                        class="w-9 h-7" id="heaven-moon"></button>
 
 
             </div>
@@ -215,8 +219,7 @@
     <!-- CENTRE AD- XBOX SECTION -->
 
     <a href="https://www.xbox.com/en-in/consoles/xbox-series-s?icid=mscom_marcom_MPH1a_XboxSeriesS" target="_blank">
-        <div
-            class="centre-ad flex justify-center items-center my-12 mx-2">
+        <div class="centre-ad flex justify-center items-center my-12 mx-2">
             <div
                 class="slider flex flex-col lg:flex-row-reverse lg:items-center lg:bg-[#e7e7e7] my-0.5 relative h-[32rem] w-[90vw] ">
                 <div class="ad overflow-hidden">
@@ -305,16 +308,19 @@
 
     <!-- FOLLOW AND DARK MODE SECTION -->
 
-    <div class="follow-ms flex space-x-6 justify-start items-center md:mx-24 m-10">
+    <div class="flex space-x-6 justify-start items-center md:mx-24 m-10" id="follow-ms">
         <p class="text-base md:text-lg">Follow Microsoft </p>
         <div class="ms-icons flex space-x-5">
             <img src="imgs/optimg/facebook-f.svg" alt="" class="w-8 h-5">
             <img src="imgs/optimg/x-twitter.svg" alt="" class="w-8 h-5">
             <img src="imgs/optimg/youtube.svg" alt="" class="w-8 h-6">
             <span class="bg-black h-7 w-[2px]"></span>
-            <button onclick="goDark()" id="heaven-moon"><img src="imgs/cloud-moon-solid.svg" alt="" class="w-8 h-6"></button>
-            <button onclick="goBright()" class="hidden" id="heaven-sun"><img src="imgs/sun-solid.svg" alt="" class="w-9 h-7"
-                    id="heaven-moon"></button>
+            <a href="https://www.instagram.com/dhrvroy?igsh=NTc4MTIwNjQ2YQ==" target="_blank"
+                class="hover:text-blue-800">
+                <span class="parent-tip font-bold overflow-visible relative">&copy;dhruvroy <span
+                        class="child-tip w-36 bg-slate-200 text-black z-10 px-5 text-lg rounded-md hidden absolute -bottom-8 -left-[35px] md:-bottom-0 md:-top-1 md:left-[100%]">Follow
+                        me!</span></span></a>
+
         </div>
     </div>
 
