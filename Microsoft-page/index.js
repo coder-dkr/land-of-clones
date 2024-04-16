@@ -67,5 +67,6 @@ puffydog.onclick = function goBright() {
 // var liz = document.getElementsByTagName('li');
 // liz.onmouseover = function(){
 //   const lis = liz.classList;
-// lis.add("unrline");
+// lis.add("underline");
 // };
+
